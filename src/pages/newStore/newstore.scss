@@ -1,0 +1,91 @@
+$background: #fab700;
+$padding: 0.5em;
+$shadowColor: rgb(67, 61, 61);
+.container {
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sub-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1,
+    h2,
+    h3 {
+      font-weight: 900;
+      margin: 10px;
+    }
+    .card {
+      background: var($background);
+      padding: calc(4 * var($padding));
+      margin-top: calc(4 * var($padding));
+      border-radius: var(5);
+      border: 3px solid var($shadowColor, currentColor);
+      box-shadow: 0.5rem 0.5rem 0 var($shadowColor, currentColor);
+      display: flex;
+
+      &_left {
+        background-color: #fab700;
+        .label {
+          font-weight: bold;
+          font-size: medium;
+          color: #fab700;
+        }
+        p {
+          color: red;
+        }
+      }
+      &_right {
+        padding: 20px;
+        margin: 10px;
+        margin-right: -5px;
+
+        image {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+          resize: both;
+          border-radius: 50px;
+          object-fit: cover;
+        }
+        .upload {
+          margin-top: 10px;
+        }
+
+        .uploadBtn {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #fab700;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 480px) {
+//   body {
+//     background-color: red;
+//   }
+//   .input__field {
+//     width: 50%;
+//     color: #333;
+//     background-color: rgb(174, 144, 238);
+//   }
+// }
+// @media screen and (min-width: 780px) {
+//   .input__field {
+//     width: 50%;
+//     background-color: lightgreen;
+//   }
+// }
